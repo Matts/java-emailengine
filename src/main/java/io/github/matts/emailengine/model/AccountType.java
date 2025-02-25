@@ -6,5 +6,7 @@ public enum AccountType {
     gmailService,
     outlook,
     mailRu,
-    oauth2
+    oauth2,
+    GATEWAY,
+    MAILGUN
 }

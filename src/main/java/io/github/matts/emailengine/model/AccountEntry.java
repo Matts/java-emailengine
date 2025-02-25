@@ -1,5 +1,6 @@
 package io.github.matts.emailengine.model;
 
+import io.github.matts.emailengine.model.AccountType;
 import io.github.matts.emailengine.model.response.AccountErrorEntry;
 import lombok.AllArgsConstructor;
 import lombok.Data;

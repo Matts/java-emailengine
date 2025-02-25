@@ -1,9 +1,7 @@
 package io.github.matts.emailengine.model.response;
 
 import io.github.matts.emailengine.model.MessageEntry;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.List;

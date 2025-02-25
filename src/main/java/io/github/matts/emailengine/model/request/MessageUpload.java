@@ -3,7 +3,9 @@ package io.github.matts.emailengine.model.request;
 import io.github.matts.emailengine.model.AddressEntry;
 import io.github.matts.emailengine.model.MessageReference;
 import io.github.matts.emailengine.model.UploadAttachment;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.util.List;

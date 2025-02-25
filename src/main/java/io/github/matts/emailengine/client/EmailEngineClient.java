@@ -1,14 +1,12 @@
 package io.github.matts.emailengine.client;
 
 import feign.*;
-import feign.auth.BasicAuthRequestInterceptor;
 import feign.codec.ErrorDecoder;
 import feign.jackson.JacksonDecoder;
 import feign.jackson.JacksonEncoder;
 import io.github.matts.emailengine.api.EmailEngineApi;
 
 import java.util.concurrent.Executors;
-import java.util.logging.Logger;
 
 public class EmailEngineClient {
 

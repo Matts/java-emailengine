@@ -1,7 +1,12 @@
 package io.github.matts.emailengine.model.hook;
 
+import io.github.matts.emailengine.model.hook.Event;
+import io.github.matts.emailengine.model.hook.Events;
 import io.github.matts.emailengine.model.hook.data.AccountEventData;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor

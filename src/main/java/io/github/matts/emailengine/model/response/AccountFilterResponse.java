@@ -1,6 +1,7 @@
 package io.github.matts.emailengine.model.response;
 
 import io.github.matts.emailengine.model.AccountEntry;
+import io.github.matts.emailengine.model.response.FilterResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

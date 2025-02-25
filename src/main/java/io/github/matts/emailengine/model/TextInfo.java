@@ -1,5 +1,6 @@
 package io.github.matts.emailengine.model;
 
+import io.github.matts.emailengine.model.EncodedSize;
 import lombok.Getter;
 
 @Getter

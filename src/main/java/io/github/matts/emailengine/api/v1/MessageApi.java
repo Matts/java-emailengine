@@ -2,9 +2,9 @@ package io.github.matts.emailengine.api.v1;
 
 import feign.*;
 import io.github.matts.emailengine.api.EmailEngineApi;
+import io.github.matts.emailengine.model.MessageEntry;
 import io.github.matts.emailengine.model.request.MessageFilterQuery;
 import io.github.matts.emailengine.model.request.MessageInformationQuery;
-import io.github.matts.emailengine.model.MessageEntry;
 import io.github.matts.emailengine.model.request.MessageSearchQuery;
 import io.github.matts.emailengine.model.request.MessageUpload;
 import io.github.matts.emailengine.model.response.MessageList;
@@ -26,7 +26,7 @@ public interface MessageApi extends EmailEngineApi {
     MessageUploadResponse uploadMessage(@Param("accountId") String accountId, MessageUpload message);
 
     @RequestLine("POST /v1/account/{accountId}/submit")
-    SubmitMessageResponse submitMessage(@Param("accountId") String accountId, MessageUpload message);
+    SubmitMessageResponse submitMessageInternal(@Param("accountId") String accountId, MessageUpload message);
 
     @RequestLine("POST /v1/account/{accountId}/search")
     MessageList searchMessagesInternal(MessageSearchQuery.Form request, @Param("accountId") String accountId, @QueryMap MessageFilterQuery queryMap);
@@ -34,6 +34,16 @@ public interface MessageApi extends EmailEngineApi {
     default MessageList listMessages(String accountId, String path, MessageFilterQuery queryMap) {
         try {
             return listMessagesInternal(accountId, path, queryMap);
+        } catch (FeignException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    default SubmitMessageResponse submitMessage(String accountId, MessageUpload message) {
+        System.out.println(message.getGateway());
+        try {
+            return submitMessageInternal(accountId, message);
         } catch (FeignException e) {
             e.printStackTrace();
             return null;

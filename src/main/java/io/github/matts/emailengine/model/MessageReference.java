@@ -1,5 +1,6 @@
 package io.github.matts.emailengine.model;
 
+import io.github.matts.emailengine.model.MessageReferenceAction;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

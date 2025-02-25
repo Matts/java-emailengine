@@ -1,5 +1,7 @@
 package io.github.matts.emailengine.model.hook;
 
+import io.github.matts.emailengine.model.hook.Event;
+import io.github.matts.emailengine.model.hook.Events;
 import io.github.matts.emailengine.model.hook.data.AuthenticationEventData;
 import lombok.Builder;
 import lombok.Data;

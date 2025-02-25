@@ -1,5 +1,6 @@
 package io.github.matts.emailengine.model.response;
 
+import io.github.matts.emailengine.model.response.ResponseReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

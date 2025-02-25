@@ -1,8 +1,8 @@
 package io.github.matts.emailengine.model;
 
+import io.github.matts.emailengine.model.MailboxResponseStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Data

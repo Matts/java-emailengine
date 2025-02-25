@@ -1,8 +1,10 @@
 package io.github.matts.emailengine.model;
 
-import lombok.AllArgsConstructor;
+import io.github.matts.emailengine.model.AddressEntry;
+import io.github.matts.emailengine.model.AttachmentEntry;
+import io.github.matts.emailengine.model.BounceEntry;
+import io.github.matts.emailengine.model.TextInfo;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
@@ -20,10 +22,10 @@ public class MessageEntry {
     private boolean flagged;
     private int size;
     private String subject;
-    private AddressEntry from;
-    private List<AddressEntry> replyTo;
-    private List<AddressEntry> to;
-    private List<AddressEntry> cc;
+    private io.github.matts.emailengine.model.AddressEntry from;
+    private List<io.github.matts.emailengine.model.AddressEntry> replyTo;
+    private List<io.github.matts.emailengine.model.AddressEntry> to;
+    private List<io.github.matts.emailengine.model.AddressEntry> cc;
     private List<AddressEntry> bcc;
     private String messageId;
     private String inReplyTo;
