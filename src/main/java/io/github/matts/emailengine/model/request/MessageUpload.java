@@ -29,4 +29,8 @@ public class MessageUpload {
     private String messageId;
     private String locale;
     private String tz;
+    private String gateway;
+    private List<AddressEntry> replyTo;
+    private Boolean trackOpens;
+    private Boolean trackClicks;
 }
