@@ -38,4 +38,14 @@ public class MessageEntry {
     private boolean isAutoReply;
     private String specialUse;
     private String messageSpecialUse;
+
+    public MessageEntry(String id, String uid, String content, String date, AddressEntry from, AddressEntry to) {
+        this.id = id;
+        this.messageId = id;
+        this.uid = uid;
+        this.subject = content;
+        this.date = date;
+        this.from = from;
+        this.to = List.of(to);
+    }
 }
