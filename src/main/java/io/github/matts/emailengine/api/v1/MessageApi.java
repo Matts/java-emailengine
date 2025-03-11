@@ -18,6 +18,9 @@ public interface MessageApi extends EmailEngineApi {
     @RequestLine("GET /v1/account/{accountId}/message/{message}")
     MessageEntry getMessageInformation(@Param("accountId") String accountId, @Param("message") String message, @QueryMap MessageInformationQuery queryMap) throws FeignException.NotFound;
 
+    @RequestLine("DELETE /v1/account/{accountId}/message/{message}?force={force}")
+    MessageEntry deleteMessage(@Param("accountId") String accountId, @Param("message") String message, @Param("force") Boolean force) throws FeignException.NotFound;
+
     @Headers("Content-Type: application/ocelot-stream")
     @RequestLine("GET /v1/account/{accountId}/attachment/{attachment}")
     Response getAttachment(@Param("accountId") String accountId, @Param("attachment") String attachment);
