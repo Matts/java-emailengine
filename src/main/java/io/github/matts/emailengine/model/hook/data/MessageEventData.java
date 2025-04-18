@@ -25,6 +25,7 @@ public class MessageEventData {
     private String subject;
     private AddressEntry from;
     private List<AddressEntry> replyTo;
+    private String inReplyTo;
     private AddressEntry sender;
     private List<AddressEntry> to;
     private List<AddressEntry> cc;
