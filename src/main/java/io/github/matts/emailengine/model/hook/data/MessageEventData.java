@@ -35,4 +35,5 @@ public class MessageEventData {
     private Boolean isAutoReply;
     private Boolean seemsLikeNew;
     private String messageSpecialUse;
+    private String preview;
 }
