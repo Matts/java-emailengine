@@ -9,4 +9,8 @@ public class DeliveryEventData {
     private String response;
     private String queueId;
     private DeliveryEnvelope envelope;
+    private String error;
+    private String errorCode;
+    private Integer smtpResponseCode;
+    private DeliveryJob job;
 }

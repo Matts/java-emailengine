@@ -19,7 +19,7 @@ public class AddressEntry {
         // remove anything between a + and the @
         return address.toLowerCase()
                 .replaceAll("\\+.*(?=@)", "")
-                .replaceAll("[^a-z0-9@.-_~]", "")
+                .replaceAll("[^a-z0-9@.\\-_~]", "")
                 // remove any whitespaces
                 .replaceAll("\\s", "")
                 .trim();
