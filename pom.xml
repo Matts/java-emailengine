@@ -6,8 +6,8 @@
 
     <groupId>io.github.matts</groupId>
     <artifactId>java-emailengine</artifactId>
-<!--    <version>0.2.16</version>-->
-    <version>SNAP</version>
+    <version>0.2.17</version>
+<!--    <version>SNAP</version>-->
     <packaging>jar</packaging>
     <name>Java EmailEngine SDK</name>
     <description>Java EmailEngine SDK</description>
