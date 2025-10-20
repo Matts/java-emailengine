@@ -44,7 +44,6 @@ public interface MessageApi extends EmailEngineApi {
     }
 
     default SubmitMessageResponse submitMessage(String accountId, MessageUpload message) {
-        System.out.println(message.getGateway());
         try {
             return submitMessageInternal(accountId, message);
         } catch (FeignException e) {
