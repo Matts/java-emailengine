@@ -1,6 +1,7 @@
 package io.github.matts.emailengine.model.hook.data;
 
 import io.github.matts.emailengine.model.AddressEntry;
+import io.github.matts.emailengine.model.AttachmentEntry;
 import io.github.matts.emailengine.model.TextInfo;
 import lombok.Data;
 
@@ -36,4 +37,5 @@ public class MessageEventData {
     private Boolean seemsLikeNew;
     private String messageSpecialUse;
     private String preview;
+    private List<AttachmentEntry> attachments;
 }

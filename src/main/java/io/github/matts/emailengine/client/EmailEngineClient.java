@@ -61,5 +61,9 @@ public class EmailEngineClient {
                 template.headerLiteral("x-ee-timeout", "30000");
             }
         }
+
+        public String buildPresignedAttachmentUrl(String accountId, String attachmentId) {
+            return String.format("%sv1/account/%s/attachment/%s?access_token=%s", baseUrl, accountId, attachmentId, apiKey);
+        }
     }
 }
