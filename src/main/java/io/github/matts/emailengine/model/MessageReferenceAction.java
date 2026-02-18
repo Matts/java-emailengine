@@ -19,4 +19,13 @@ public enum MessageReferenceAction {
     public String toString() {
         return this.value;
     }
+
+    public static MessageReferenceAction fromString(String value) {
+        for (MessageReferenceAction action : MessageReferenceAction.values()) {
+            if (action.value.equalsIgnoreCase(value)) {
+                return action;
+            }
+        }
+        return MessageReferenceAction.replyAll;
+    }
 }
