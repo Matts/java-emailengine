@@ -15,7 +15,6 @@ public interface MessageApi extends EmailEngineApi {
     @RequestLine("GET /v1/account/{accountId}/messages")
     MessageList listMessagesInternal(@Param("accountId") String accountId, @Param("path") String path, @QueryMap MessageFilterQuery queryMap);
 
-    @Headers("x-ee-timeout: 20000")
     @RequestLine("GET /v1/account/{accountId}/message/{message}")
     MessageEntry getMessageInformation(@Param("accountId") String accountId, @Param("message") String message, @QueryMap MessageInformationQuery queryMap) throws FeignException.NotFound;
 
